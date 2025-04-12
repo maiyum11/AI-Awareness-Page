@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI & Media Ethics: Can You Spot the Truth?</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0e0e0e;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background: linear-gradient(to right, #4b0082, #6a0dad);
+      text-align: center;
+      padding: 40px 20px;
+    }
+    h1, h2 {
+      color: #d8b4ff;
+    }
+    section {
+      padding: 50px 60px;
+      border-bottom: 1px solid #333;
+    }
+    .quote {
+      background-color: #1f1f2e;
+      padding: 15px;
+      margin: 10px 0;
+      border-left: 5px solid #9f79ee;
+      font-style: italic;
+    }
+    .quiz-item {
+      margin-bottom: 30px;
+    }
+    .quiz-feedback {
+      font-weight: bold;
+      color: #ffcc00;
+      display: none;
+    }
+    .timeline {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .timeline li {
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: #6a0dad;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #8b2df5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI & Media Ethics: Can You Spot the Truth?</h1>
+    <p>Exploring AI's impact on political media, ethics, and democracy.</p>
+  </header>
+
+  <section>
+    <h2>AI in Political Media</h2>
+    <p>Artificial Intelligence is transforming the way political media is created and consumed. Deepfakes, AI-generated articles, and algorithm-driven ads are shaping public perception and influencing elections worldwide.</p>
+    <img src="C:\Users\maria\OneDrive\Desktop\finalproj\Screenshot 2025-04-11 204022.png" alt="Deepfake Example" width="100%" />
+  </section>
+
+  <section>
+    <h2>Ethics & Global Impacts</h2>
+    <div class="quote">“Deepfakes threaten transparency in democratic elections.” – Momeni (2024)</div>
+    <div class="quote">“AI-generated content can reinforce bias and spread misinformation.” – Gutiérrez-Caneda et al. (2024)</div>
+    <p>Different countries are approaching AI regulation differently, reflecting varying ethical and political frameworks.</p>
+  </section>
+
+  <section>
+    <h2>Timeline of Deepfake Regulation</h2>
+    <ul class="timeline">
+      <li><strong>2017:</strong> First viral deepfake video appears online.</li>
+      <li><strong>2019:</strong> U.S. proposes DEEPFAKES Accountability Act.</li>
+      <li><strong>2024:</strong> EU proposes AI Act to regulate synthetic media in political communication.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>How to Spot AI-Generated Media</h2>
+    <ul>
+      <li><strong>Look for visual artifacts:</strong> AI images and videos often contain odd inconsistencies like distorted hands, asymmetrical faces, or unusual lighting.</li>
+      <li><strong>Check for blinking and facial motion:</strong> Deepfakes may have unnatural eye movement or lack blinking entirely.</li>
+      <li><strong>Listen for robotic or uneven speech:</strong> AI voices can sound off in tone, pacing, or emotion.</li>
+      <li><strong>Use reverse image search:</strong> Find the origin of an image to verify if it's authentic or manipulated.</li>
+      <li><strong>Look at the source:</strong> Trust only verified and credible outlets when consuming political content.</li>
+      <li><strong>Metadata and AI detection tools:</strong> Use tools like Deepware Scanner or Sensity AI to check suspicious content.</li>
+      <li><strong>Too good to be true?</strong> If something feels overly perfect or shocking, it might be fabricated. Pause and investigate.</li>
+    </ul>
+  </section>
+  
+  <section>
+    <h2>Can You Spot the AI? (Quiz)</h2>
+    <div id="quiz-container"></div>
+  </section>
+
+  <section>
+    <h2>What Can You Do?</h2>
+    <ul>
+      <li>Verify the source of the content.</li>
+      <li>Use reverse image search tools.</li>
+      <li>Stay updated on AI regulations and fact-checking practices.</li>
+      <li>Encourage transparency in media platforms and content creators.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Sources:</h2>
+    <ul>
+      <li> https://www.newsguardtech.com/special-reports/ai-tracking-center/ </li>
+      <li> https://www.technologyreview.com/2023/10/04/1080801/generative-ai-boosting-disinformation-and-propaganda-freedom-house/ </li>
+      <li> https://www.technologyreview.com/2024/06/08/1093356/propagandists-are-using-ai-too-and-companies-need-to-be-open-about-it/ </li>
+      <li> https://abcnews.go.com/US/real-worry-ai-making-harder-spot-fake-images/story?id=98188795 </li>
+      <li> https://www.bbc.com/news/world-us-canada-65069316 </li>
+      <li> https://www.washingtonpost.com/technology/2023/11/23/stock-photos-ai-images-controversy/ </li>
+      <li> https://abcnews.go.com/US/video/fake-images-generated-ai-spreading-social-media-compounding-114824660 </li>
+      <li> https://www.washingtonpost.com/technology/2024/08/03/ai-cats-video-tikok-instagram-youtube/ </li>
+      <li> https://www.cnn.com/2024/02/01/politics/election-deepfake-threats-invs/index.html </li>
+      <li> https://www.wired.com/story/slovakias-election-deepfakes-show-ai-is-a-danger-to-democracy/ </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Created by Mariam Shahnawaz & Ethan Haynes – Global Media Research Project</p>
+  </footer>
+
+  <script>
+    const questions = [
+      { q: "1. A political speech showing a candidate endorsing the opposite party.", a: "ai" },
+      { q: "2. A news article summarizing an election before it ends.", a: "ai" },
+      { q: "3. A campaign poster with perfect symmetry and odd font.", a: "ai" },
+      { q: "4. A blurry video clip with distorted voice of a politician.", a: "ai" },
+      { q: "5. A live news broadcast with incorrect location tags.", a: "real" },
+      { q: "6. A viral tweet from a known parody account.", a: "real" },
+      { q: "7. A flawless video of a candidate speaking without blinking.", a: "ai" },
+      { q: "8. An AI-generated avatar hosting a press conference.", a: "ai" },
+      { q: "9. A digital flyer using inconsistent logo branding.", a: "real" },
+      { q: "10. A photo of a politician with three arms.", a: "ai" },
+      { q: "11. A newspaper article with a typo in the headline.", a: "real" },
+      { q: "12. A campaign speech mentioning fictional places.", a: "ai" },
+      { q: "13. A deepfake showing two leaders shaking hands at a fictional summit.", a: "ai" },
+      { q: "14. A verified YouTube video from an official government channel.", a: "real" },
+      { q: "15. A computer-generated image shared as breaking news.", a: "ai" },
+    ];
+
+    function generateQuiz() {
+      const container = document.getElementById("quiz-container");
+      questions.forEach((item, index) => {
+        const div = document.createElement("div");
+        div.className = "quiz-item";
+        div.innerHTML = `
+          <p><strong>${item.q}</strong></p>
+          <button onclick="checkAnswer('q${index}', 'ai')">AI-generated</button>
+          <button onclick="checkAnswer('q${index}', 'real')">Real</button>
+          <p id="q${index}" class="quiz-feedback"></p>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    function checkAnswer(id, answer) {
+      const feedback = document.getElementById(id);
+      const questionIndex = parseInt(id.replace('q', ''));
+      const correct = questions[questionIndex].a;
+      if (answer === correct) {
+        feedback.innerText = '✅ Correct!';
+        feedback.style.color = '#00e676';
+      } else {
+        feedback.innerText = `❌ Oops! This one was ${correct.toUpperCase()}-generated.`;
+        feedback.style.color = '#ff5252';
+      }
+      feedback.style.display = 'block';
+    }
+
+    window.onload = generateQuiz;
+  </script>
+</body>
+</html>
